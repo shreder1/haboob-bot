@@ -75,13 +75,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ensure_user(user_id)
 
     msg = (
-        "🐫🕶️ *HABOOB Coin Collector*\n\n"
+        "🐫🕶️ HABOOB Coin Collector\n\n"
         "أوامر البوت:\n"
         "• /claim — تجمع HABOOB (مرة كل 24 ساعة)\n"
         "• /balance — رصيدك الحالي\n\n"
         "HABOOB too calm for this market 😎"
     )
-    await update.message.reply_text(msg, parse_mode="Markdown")
+    await update.message.reply_text(msg)
 
 
 async def claim(update: Update, context: ContextTypes.DEFAULT_TYPE):
